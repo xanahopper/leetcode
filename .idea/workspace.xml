@@ -10,8 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba6559c-0a38-42e6-bff3-75f520cde2d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/solution1.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/solution2.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib.rs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,20 +34,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lib.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="56" column="57" lean-forward="true" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+            <state relative-caret-position="18">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Cargo.toml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/tests/mod.rs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+            <state relative-caret-position="342">
+              <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -66,7 +69,12 @@
       <list>
         <option value="$PROJECT_DIR$/src/main.rs" />
         <option value="$PROJECT_DIR$/Cargo.toml" />
+        <option value="$PROJECT_DIR$/src/solution/solution1.rs" />
+        <option value="$PROJECT_DIR$/src/solution/solution2.rs" />
+        <option value="$PROJECT_DIR$/src/solution/mod.rs" />
+        <option value="$PROJECT_DIR$/src/leetcode/mod.rs" />
         <option value="$PROJECT_DIR$/src/lib.rs" />
+        <option value="$PROJECT_DIR$/src/tests/mod.rs" />
       </list>
     </option>
   </component>
@@ -94,6 +102,18 @@
               <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
               <item name="leetcode" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="leetcode" type="b2602c69:ProjectViewProjectNode" />
+              <item name="leetcode" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -182,20 +202,11 @@
       <option name="presentableId" value="Default" />
       <updated>1553091901843</updated>
       <workItem from="1553091903339" duration="7535000" />
-      <workItem from="1553182580397" duration="205000" />
+      <workItem from="1553182580397" duration="1067000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test_tests__n2_test - 2019.03.21 at 22h 52m 24s.xml">
-      <configuration name="Test tests::n2_test" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_tests__n2_test - 2019.03.21 at 22h 52m 57s.xml">
-      <configuration name="Test tests::n2_test" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
-    <history-entry file="Test_tests__n2_test - 2019.03.21 at 22h 57m 08s.xml">
-      <configuration name="Test tests::n2_test" configurationId="CargoCommandRunConfiguration" />
-    </history-entry>
     <history-entry file="Test_tests__n2_test - 2019.03.21 at 23h 14m 41s.xml">
       <configuration name="Test tests::n2_test" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
@@ -217,9 +228,18 @@
     <history-entry file="Test_lib__tests - 2019.03.21 at 23h 23m 27s.xml">
       <configuration name="Test lib::tests" configurationId="CargoCommandRunConfiguration" />
     </history-entry>
+    <history-entry file="Test_lib__tests - 2019.03.21 at 23h 40m 43s.xml">
+      <configuration name="Test lib::tests" configurationId="CargoCommandRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_lib__tests - 2019.03.21 at 23h 49m 55s.xml">
+      <configuration name="Test lib::tests" configurationId="CargoCommandRunConfiguration" />
+    </history-entry>
+    <history-entry file="Test_lib__tests - 2019.03.21 at 23h 53m 35s.xml">
+      <configuration name="Test lib::tests" configurationId="CargoCommandRunConfiguration" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7740000" />
+    <option name="totallyTimeSpent" value="8602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="0" width="1920" height="1080" extended-state="0" />
@@ -230,7 +250,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32923076" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32923076" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -265,17 +285,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/leetcode/solution1.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leetcode/mod.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/leetcode/solution2.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Cargo.toml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+        <state relative-caret-position="54">
+          <caret line="3" column="46" lean-forward="true" selection-start-line="3" selection-start-column="46" selection-end-line="3" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lib.rs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="56" column="57" lean-forward="true" selection-start-line="56" selection-start-column="57" selection-end-line="56" selection-end-column="57" />
+        <state relative-caret-position="18">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/tests/mod.rs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="41" lean-forward="true" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
         </state>
       </provider>
     </entry>
