@@ -3,6 +3,7 @@ name = "leetcode"
 version = "0.1.0"
 authors = ["Xana Hopper <xanahopper@163.com>"]
 edition = "2018"
+description = "Rust solution for LeetCode"
 
 [dependencies]
 leetcode_prelude = "^0.1"
