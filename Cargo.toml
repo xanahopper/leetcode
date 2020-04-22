@@ -6,4 +6,4 @@ edition = "2018"
 description = "Rust solution for LeetCode"
 
 [dependencies]
-leetcode_prelude = "^0.1"
+leetcode_prelude = "^0.2"
