@@ -25,3 +25,10 @@ fn n3_test() {
     assert_eq!(Solution::length_of_longest_substring(String::from("bbbbb")), 1);
     assert_eq!(Solution::length_of_longest_substring(String::from("pwwkew")), 3);
 }
+
+#[test]
+fn n6_test() {
+    use crate::leetcode::Solution;
+    assert_eq!(Solution::convert(String::from("PAYPALISHIRING"), 3), String::from("PAHNAPLSIIGYIR"));
+    assert_eq!(Solution::convert(String::from("PAYPALISHIRING"), 4), String::from("PINALSIGYAHRPI"));
+}
