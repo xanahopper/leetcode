@@ -1,3 +1,5 @@
+use crate::leetcode::Solution;
+
 #[test]
 fn n1_test() {
     use crate::leetcode::Solution;
@@ -31,4 +33,26 @@ fn n6_test() {
     use crate::leetcode::Solution;
     assert_eq!(Solution::convert(String::from("PAYPALISHIRING"), 3), String::from("PAHNAPLSIIGYIR"));
     assert_eq!(Solution::convert(String::from("PAYPALISHIRING"), 4), String::from("PINALSIGYAHRPI"));
+}
+
+#[test]
+fn n7_test() {
+    assert_eq!(Solution::reverse(123), 321);
+    assert_eq!(Solution::reverse(i32::MIN), 0);
+    assert_eq!(Solution::reverse(-123), -321);
+    assert_eq!(Solution::reverse(120), 21);
+}
+
+#[test]
+fn n8_test() {
+    assert_eq!(Solution::my_atoi(String::from("42")), 42);
+    assert_eq!(Solution::my_atoi(String::from("+1")), 1);
+    assert_eq!(Solution::my_atoi(String::from("   +0 123")), 0);
+    assert_eq!(Solution::my_atoi(String::from("   -42")), -42);
+    assert_eq!(Solution::my_atoi(String::from("4193 with words")), 4193);
+    assert_eq!(Solution::my_atoi(String::from("words and 987")), 0);
+    assert_eq!(Solution::my_atoi(String::from("-91283472332")), -2147483648);
+    assert_eq!(Solution::my_atoi(String::from("2147483648")), 2147483647);
+    assert_eq!(Solution::my_atoi(String::from("-   234")), 0);
+    assert_eq!(Solution::my_atoi(String::from("-5-")), -5);
 }

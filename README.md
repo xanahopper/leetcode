@@ -1,7 +1,7 @@
 # LeetCode Solution in Rust
 
 ## How to run?
-For now use Rust 1.42.0 stable.
+For now use Rust 1.43.0 stable.
 
 Every problem has test, so just run
 

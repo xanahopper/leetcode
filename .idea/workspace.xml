@@ -31,19 +31,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba6559c-0a38-42e6-bff3-75f520cde2d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/doc/p___k+1__2_cdot_text{numRows}-2_-_i_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/doc/p__k_;__2_cdot_text{numRows}-2_+i_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/doc/p__k_;__2_cdot_text{numRows}_-_2__+_text{numRows}_-_1_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/doc/p__k_;__2_cdot_text{numRows}_-_2__.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/doc/p__n_==_text{len}_s__.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/doc/p__text{min}__text{numRows},_text{len}_s___.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/doc/p__text{numRows}-1_.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/doc/zigzag-conversion.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/solution_6.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/solution_7.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/solution_8.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/en/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/en/all.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/editor/en/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/en/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests.rs" afterDir="false" />
@@ -108,7 +100,7 @@
       <command value="cargo update" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo Command.Test tests::n6_test">
+  <component name="RunManager" selected="Cargo Command.Test tests::n8_test">
     <configuration name="Run leetcode" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package leetcode --bin leetcode" />
@@ -135,19 +127,6 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::n3_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package leetcode --lib tests::n3_test -- --exact" />
-      <option name="allFeatures" value="false" />
-      <option name="nocapture" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <envs />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Test tests::n6_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="test --package leetcode --lib tests::n6_test -- --exact" />
@@ -161,9 +140,22 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::tests::n3_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test tests::n7_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package leetcode --lib tests::tests::n3_test -- --exact" />
+      <option name="command" value="test --package leetcode --lib tests::n7_test -- --exact" />
+      <option name="allFeatures" value="false" />
+      <option name="nocapture" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test tests::n8_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="channel" value="DEFAULT" />
+      <option name="command" value="test --package leetcode --lib tests::n8_test -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="nocapture" value="false" />
       <option name="emulateTerminal" value="false" />
@@ -176,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo Command.Test tests::n6_test" />
+        <item itemvalue="Cargo Command.Test tests::n8_test" />
+        <item itemvalue="Cargo Command.Test tests::n7_test" />
         <item itemvalue="Cargo Command.Run leetcode" />
+        <item itemvalue="Cargo Command.Test tests::n6_test" />
         <item itemvalue="Cargo Command.Test lib::tests" />
-        <item itemvalue="Cargo Command.Test tests::n3_test" />
-        <item itemvalue="Cargo Command.Test tests::tests::n3_test" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +197,7 @@
       <workItem from="1588429180092" duration="424000" />
       <workItem from="1588429681417" duration="925000" />
       <workItem from="1588430700920" duration="312000" />
-      <workItem from="1588431040252" duration="5090000" />
+      <workItem from="1588431040252" duration="13673000" />
     </task>
     <servers />
   </component>
@@ -241,46 +233,46 @@
     </state>
     <state x="-1034" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120/-1600.0.1600.900@-1600.0.1600.900" timestamp="1587546661021" />
     <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120/-1600.0.1600.900@0.0.1792.1120" timestamp="1587545797979" />
-    <state width="1878" height="325" key="GridCell.Tab.0.bottom" timestamp="1588512778597">
+    <state width="939" height="329" key="GridCell.Tab.0.bottom" timestamp="1588560741186">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="325" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588512778597" />
+    <state width="939" height="329" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588560741186" />
     <state width="1558" height="422" key="GridCell.Tab.0.bottom/0.0.1792.1120/-1600.0.1600.900@-1600.0.1600.900" timestamp="1587546939765" />
     <state width="1750" height="411" key="GridCell.Tab.0.bottom/0.0.1792.1120/-1600.0.1600.900@0.0.1792.1120" timestamp="1587545967006" />
-    <state width="1878" height="325" key="GridCell.Tab.0.center" timestamp="1588512778595">
+    <state width="939" height="329" key="GridCell.Tab.0.center" timestamp="1588560741184">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="325" key="GridCell.Tab.0.center/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588512778595" />
+    <state width="939" height="329" key="GridCell.Tab.0.center/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588560741184" />
     <state width="1558" height="422" key="GridCell.Tab.0.center/0.0.1792.1120/-1600.0.1600.900@-1600.0.1600.900" timestamp="1587546939764" />
     <state width="1750" height="411" key="GridCell.Tab.0.center/0.0.1792.1120/-1600.0.1600.900@0.0.1792.1120" timestamp="1587545967005" />
-    <state width="1878" height="325" key="GridCell.Tab.0.left" timestamp="1588512778594">
+    <state width="939" height="329" key="GridCell.Tab.0.left" timestamp="1588560741182">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="325" key="GridCell.Tab.0.left/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588512778594" />
+    <state width="939" height="329" key="GridCell.Tab.0.left/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588560741182" />
     <state width="1558" height="422" key="GridCell.Tab.0.left/0.0.1792.1120/-1600.0.1600.900@-1600.0.1600.900" timestamp="1587546939763" />
     <state width="1750" height="411" key="GridCell.Tab.0.left/0.0.1792.1120/-1600.0.1600.900@0.0.1792.1120" timestamp="1587545967004" />
-    <state width="1878" height="325" key="GridCell.Tab.0.right" timestamp="1588512778596">
+    <state width="939" height="329" key="GridCell.Tab.0.right" timestamp="1588560741185">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="325" key="GridCell.Tab.0.right/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588512778596" />
+    <state width="939" height="329" key="GridCell.Tab.0.right/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588560741185" />
     <state width="1558" height="422" key="GridCell.Tab.0.right/0.0.1792.1120/-1600.0.1600.900@-1600.0.1600.900" timestamp="1587546939765" />
     <state width="1750" height="411" key="GridCell.Tab.0.right/0.0.1792.1120/-1600.0.1600.900@0.0.1792.1120" timestamp="1587545967005" />
-    <state width="1878" height="362" key="GridCell.Tab.1.bottom" timestamp="1588511337527">
+    <state width="1878" height="362" key="GridCell.Tab.1.bottom" timestamp="1588552468014">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="362" key="GridCell.Tab.1.bottom/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588511337527" />
-    <state width="1878" height="362" key="GridCell.Tab.1.center" timestamp="1588511337525">
+    <state width="1878" height="362" key="GridCell.Tab.1.bottom/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588552468014" />
+    <state width="1878" height="362" key="GridCell.Tab.1.center" timestamp="1588552468012">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="362" key="GridCell.Tab.1.center/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588511337525" />
-    <state width="1878" height="362" key="GridCell.Tab.1.left" timestamp="1588511337524">
+    <state width="1878" height="362" key="GridCell.Tab.1.center/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588552468012" />
+    <state width="1878" height="362" key="GridCell.Tab.1.left" timestamp="1588552468011">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="362" key="GridCell.Tab.1.left/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588511337524" />
-    <state width="1878" height="362" key="GridCell.Tab.1.right" timestamp="1588511337526">
+    <state width="1878" height="362" key="GridCell.Tab.1.left/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588552468011" />
+    <state width="1878" height="362" key="GridCell.Tab.1.right" timestamp="1588552468013">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1878" height="362" key="GridCell.Tab.1.right/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588511337526" />
+    <state width="1878" height="362" key="GridCell.Tab.1.right/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588552468013" />
     <state x="-1320" y="149" width="1229" height="722" key="SettingsEditor" timestamp="1588433449413">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
