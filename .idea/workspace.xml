@@ -31,13 +31,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba6559c-0a38-42e6-bff3-75f520cde2d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/solution_7.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/solution_8.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/solution_13.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/solution_14.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/en/solution_28.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/en/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/en/all.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/editor/en/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/en/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -87,7 +87,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.completion" />
+    <property name="settings.editor.selected.configurable" value="inlay.hints.Rust" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -100,7 +100,7 @@
       <command value="cargo update" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo Command.Test tests::n8_test">
+  <component name="RunManager" selected="Cargo Command.Test tests::n28_test">
     <configuration name="Run leetcode" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
       <option name="command" value="run --package leetcode --bin leetcode" />
@@ -114,9 +114,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test lib::tests" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test tests::n14_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package leetcode --lib tests" />
+      <option name="command" value="test --package leetcode --lib tests::n14_test -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="nocapture" value="false" />
       <option name="emulateTerminal" value="false" />
@@ -127,9 +127,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::n6_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="Test tests::n28_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="channel" value="DEFAULT" />
-      <option name="command" value="test --package leetcode --lib tests::n6_test -- --exact" />
+      <option name="command" value="test --package leetcode --lib tests::n28_test -- --exact" />
       <option name="allFeatures" value="false" />
       <option name="nocapture" value="false" />
       <option name="emulateTerminal" value="false" />
@@ -168,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo Command.Test tests::n28_test" />
+        <item itemvalue="Cargo Command.Test tests::n14_test" />
         <item itemvalue="Cargo Command.Test tests::n8_test" />
         <item itemvalue="Cargo Command.Test tests::n7_test" />
         <item itemvalue="Cargo Command.Run leetcode" />
-        <item itemvalue="Cargo Command.Test tests::n6_test" />
-        <item itemvalue="Cargo Command.Test lib::tests" />
       </list>
     </recent_temporary>
   </component>
@@ -198,6 +198,8 @@
       <workItem from="1588429681417" duration="925000" />
       <workItem from="1588430700920" duration="312000" />
       <workItem from="1588431040252" duration="13673000" />
+      <workItem from="1588736687480" duration="23000" />
+      <workItem from="1591799593906" duration="11714000" />
     </task>
     <servers />
   </component>
@@ -233,30 +235,42 @@
     </state>
     <state x="-1034" y="252" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120/-1600.0.1600.900@-1600.0.1600.900" timestamp="1587546661021" />
     <state x="634" y="314" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1792.1120/-1600.0.1600.900@0.0.1792.1120" timestamp="1587545797979" />
-    <state width="939" height="329" key="GridCell.Tab.0.bottom" timestamp="1588560741186">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state width="1878" height="454" key="GridCell.Tab.0.bottom" timestamp="1592059582621">
+      <screen x="-40" y="-1080" width="1920" height="1080" />
     </state>
     <state width="939" height="329" key="GridCell.Tab.0.bottom/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588560741186" />
+    <state width="1494" height="454" key="GridCell.Tab.0.bottom/0.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1591836607063" />
     <state width="1558" height="422" key="GridCell.Tab.0.bottom/0.0.1792.1120/-1600.0.1600.900@-1600.0.1600.900" timestamp="1587546939765" />
     <state width="1750" height="411" key="GridCell.Tab.0.bottom/0.0.1792.1120/-1600.0.1600.900@0.0.1792.1120" timestamp="1587545967006" />
-    <state width="939" height="329" key="GridCell.Tab.0.center" timestamp="1588560741184">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state width="1878" height="454" key="GridCell.Tab.0.bottom/1792.-40.1920.1080/0.0.1792.1120/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1591842691687" />
+    <state width="1878" height="454" key="GridCell.Tab.0.bottom/1880.-1080.1920.1080/-40.-1080.1920.1080/0.0.1792.1120@-40.-1080.1920.1080" timestamp="1592059582621" />
+    <state width="1878" height="454" key="GridCell.Tab.0.center" timestamp="1592059582619">
+      <screen x="-40" y="-1080" width="1920" height="1080" />
     </state>
     <state width="939" height="329" key="GridCell.Tab.0.center/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588560741184" />
+    <state width="1494" height="454" key="GridCell.Tab.0.center/0.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1591836607062" />
     <state width="1558" height="422" key="GridCell.Tab.0.center/0.0.1792.1120/-1600.0.1600.900@-1600.0.1600.900" timestamp="1587546939764" />
     <state width="1750" height="411" key="GridCell.Tab.0.center/0.0.1792.1120/-1600.0.1600.900@0.0.1792.1120" timestamp="1587545967005" />
-    <state width="939" height="329" key="GridCell.Tab.0.left" timestamp="1588560741182">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state width="1878" height="454" key="GridCell.Tab.0.center/1792.-40.1920.1080/0.0.1792.1120/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1591842691685" />
+    <state width="1878" height="454" key="GridCell.Tab.0.center/1880.-1080.1920.1080/-40.-1080.1920.1080/0.0.1792.1120@-40.-1080.1920.1080" timestamp="1592059582619" />
+    <state width="1878" height="454" key="GridCell.Tab.0.left" timestamp="1592059582619">
+      <screen x="-40" y="-1080" width="1920" height="1080" />
     </state>
     <state width="939" height="329" key="GridCell.Tab.0.left/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588560741182" />
+    <state width="1494" height="454" key="GridCell.Tab.0.left/0.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1591836607061" />
     <state width="1558" height="422" key="GridCell.Tab.0.left/0.0.1792.1120/-1600.0.1600.900@-1600.0.1600.900" timestamp="1587546939763" />
     <state width="1750" height="411" key="GridCell.Tab.0.left/0.0.1792.1120/-1600.0.1600.900@0.0.1792.1120" timestamp="1587545967004" />
-    <state width="939" height="329" key="GridCell.Tab.0.right" timestamp="1588560741185">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state width="1878" height="454" key="GridCell.Tab.0.left/1792.-40.1920.1080/0.0.1792.1120/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1591842691684" />
+    <state width="1878" height="454" key="GridCell.Tab.0.left/1880.-1080.1920.1080/-40.-1080.1920.1080/0.0.1792.1120@-40.-1080.1920.1080" timestamp="1592059582619" />
+    <state width="1878" height="454" key="GridCell.Tab.0.right" timestamp="1592059582620">
+      <screen x="-40" y="-1080" width="1920" height="1080" />
     </state>
     <state width="939" height="329" key="GridCell.Tab.0.right/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588560741185" />
+    <state width="1494" height="454" key="GridCell.Tab.0.right/0.-1080.1920.1080/0.0.1536.960@0.0.1536.960" timestamp="1591836607063" />
     <state width="1558" height="422" key="GridCell.Tab.0.right/0.0.1792.1120/-1600.0.1600.900@-1600.0.1600.900" timestamp="1587546939765" />
     <state width="1750" height="411" key="GridCell.Tab.0.right/0.0.1792.1120/-1600.0.1600.900@0.0.1792.1120" timestamp="1587545967005" />
+    <state width="1878" height="454" key="GridCell.Tab.0.right/1792.-40.1920.1080/0.0.1792.1120/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1591842691686" />
+    <state width="1878" height="454" key="GridCell.Tab.0.right/1880.-1080.1920.1080/-40.-1080.1920.1080/0.0.1792.1120@-40.-1080.1920.1080" timestamp="1592059582620" />
     <state width="1878" height="362" key="GridCell.Tab.1.bottom" timestamp="1588552468014">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
@@ -273,20 +287,22 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state width="1878" height="362" key="GridCell.Tab.1.right/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588552468013" />
-    <state x="-1320" y="149" width="1229" height="722" key="SettingsEditor" timestamp="1588433449413">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state x="2371" y="112" width="1229" height="722" key="SettingsEditor" timestamp="1591863806962">
+      <screen x="1792" y="-40" width="1920" height="1080" />
     </state>
     <state x="-1320" y="149" width="1229" height="722" key="SettingsEditor/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588433449413" />
     <state x="-1497" y="186" key="SettingsEditor/-1920.0.1920.1080/-3840.23.1920.1057/0.23.1440.804@-1920.0.1920.1080" timestamp="1588429919993" />
     <state x="-1246" y="160" key="SettingsEditor/0.0.1792.1120/-1600.0.1600.900@-1600.0.1600.900" timestamp="1587547198100" />
     <state x="397" y="199" key="SettingsEditor/0.0.1792.1120/-1600.0.1600.900@0.0.1792.1120" timestamp="1587545659403" />
+    <state x="2371" y="112" key="SettingsEditor/1792.-40.1920.1080/0.0.1792.1120/-1920.0.1920.1080@1792.-40.1920.1080" timestamp="1591863806962" />
     <state x="-1261" y="132" width="602" height="816" key="find.popup" timestamp="1588511436040">
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1261" y="132" width="602" height="816" key="find.popup/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588511436040" />
-    <state x="-1295" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1588485925033">
-      <screen x="-1920" y="0" width="1920" height="1080" />
+    <state x="2417" y="201" width="670" height="676" key="search.everywhere.popup" timestamp="1591863789415">
+      <screen x="1792" y="-40" width="1920" height="1080" />
     </state>
     <state x="-1295" y="241" width="670" height="676" key="search.everywhere.popup/-1920.0.1920.1080/-3840.0.1920.1080/0.0.1440.900@-1920.0.1920.1080" timestamp="1588485925033" />
+    <state x="2417" y="201" width="670" height="676" key="search.everywhere.popup/1792.-40.1920.1080/0.0.1792.1120/-1920.0.1920.1080@1792.-40.1920.1080" timestamp="1591863789415" />
   </component>
 </project>

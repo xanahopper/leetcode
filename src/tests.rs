@@ -56,3 +56,24 @@ fn n8_test() {
     assert_eq!(Solution::my_atoi(String::from("-   234")), 0);
     assert_eq!(Solution::my_atoi(String::from("-5-")), -5);
 }
+
+#[test]
+fn n14_test() {
+    assert_eq!(Solution::longest_common_prefix(
+        vec!["flower".to_string(), "flow".to_string(), "flight".to_string()]),
+        "fl".to_string());
+    assert_eq!(Solution::longest_common_prefix(
+        vec!["dog".to_string(), "racecar".to_string(), "car".to_string()],
+    ),
+               String::new());
+    assert_eq!(Solution::longest_common_prefix(
+        vec!["c".to_string(), "c".to_string()]
+    ),
+        "c".to_string());
+}
+
+#[test]
+fn n28_test() {
+    assert_eq!(Solution::str_str(String::from("hello"), String::from("ll")), 2);
+    assert_eq!(Solution::str_str(String::from("aaaaa"), String::from("bba")), -1);
+}
