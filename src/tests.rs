@@ -29,6 +29,12 @@ fn n3_test() {
 }
 
 #[test]
+fn n4_test() {
+    assert_eq!(Solution::find_median_sorted_arrays(vec![1, 3], vec![2]), 2.0);
+    assert_eq!(Solution::find_median_sorted_arrays(vec![1, 2], vec![3, 4]), 2.5);
+}
+
+#[test]
 fn n6_test() {
     use crate::leetcode::Solution;
     assert_eq!(Solution::convert(String::from("PAYPALISHIRING"), 3), String::from("PAHNAPLSIIGYIR"));
@@ -70,6 +76,13 @@ fn n14_test() {
         vec!["c".to_string(), "c".to_string()]
     ),
         "c".to_string());
+}
+
+#[test]
+fn n9_test() {
+    assert_eq!(Solution::is_palindrome(121), true);
+    assert_eq!(Solution::is_palindrome(-121), false);
+    assert_eq!(Solution::is_palindrome(123), false);
 }
 
 #[test]
