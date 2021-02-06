@@ -90,3 +90,10 @@ fn n28_test() {
     assert_eq!(Solution::str_str(String::from("hello"), String::from("ll")), 2);
     assert_eq!(Solution::str_str(String::from("aaaaa"), String::from("bba")), -1);
 }
+
+#[test]
+fn n887_test() {
+    assert_eq!(Solution::super_egg_drop(1, 2), 2);
+    assert_eq!(Solution::super_egg_drop(2, 6), 3);
+    assert_eq!(Solution::super_egg_drop(3, 14), 4);
+}
