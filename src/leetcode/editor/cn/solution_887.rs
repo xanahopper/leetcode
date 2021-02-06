@@ -53,35 +53,25 @@ use crate::leetcode::Solution;
 
 /// f(K, K) 是 K 个鸡蛋 N 层楼所需要的最少实验次数，所以
 /// f(K, N) = min{ f(K - 1, x), f(K, N-x) } 1 <= x <= N
+/// 优化后
+/// f(K, N) = f(K - 1, N - 1) + f(K, N - 1) + 1
 
 //leetcode submit region begin(Prohibit modification and deletion)
 use std::cmp::{min, max};
 impl Solution {
     pub fn super_egg_drop(k: i32, n: i32) -> i32 {
-        let mut f = vec![vec![(n + 1) as usize; (n + 1) as usize]; (k + 1) as usize];
-        Solution::search_result(&mut f, k as usize, n as usize) as i32
-    }
-
-    fn search_result(f: &mut Vec<Vec<usize>>, k: usize, n: usize) -> usize {
-        if k == 1 || n == 1 || n == 0 {
-            n
-        } else {
-            let mut min_f = n;
-            for x in 1..=n {
-                f[k - 1][x - 1] = if f[k - 1][x - 1] == n {
-                    min(f[k - 1][x - 1] - 1, Solution::search_result(f,k - 1, x - 1))
-                } else {
-                    f[k - 1][x - 1]
-                };
-                f[k][n - x] = if f[k][n - x] == n {
-                    min(f[k][n - x] - 1, Solution::search_result(f, k, n - x))
-                } else {
-                    f[k][n - x]
-                };
-                min_f = min(min_f, 1 + max(f[k - 1][x - 1], f[k][n - x]));
+        let mut f = vec![vec![0; (n + 1) as usize]; (k + 1) as usize];
+        for m in 1..=(n as usize) {
+            f[0][m] = 0;
+            for ki in 1..=(k as usize) {
+                f[ki][m] = f[ki][m - 1] + f[ki - 1][m - 1] + 1;
+                if f[ki][m] >= n {
+                    return m as i32;
+                }
             }
-            min_f
         }
+        n
+        // Solution::search_result(&mut f, k as usize, n as usize) as i32
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
