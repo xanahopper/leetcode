@@ -92,6 +92,23 @@ fn n28_test() {
 }
 
 #[test]
+fn n460_test() {
+    use crate::leetcode::solution_460::LFUCache;
+    let mut lfu_cache = LFUCache::new(3);
+    lfu_cache.put(2, 2);
+    lfu_cache.put(1, 1);
+    assert_eq!(lfu_cache.get(2), 2);
+    assert_eq!(lfu_cache.get(1), 1);
+    assert_eq!(lfu_cache.get(2), 2);
+    lfu_cache.put(3, 3);
+    lfu_cache.put(4, 4);
+    assert_eq!(lfu_cache.get(3), -1);
+    assert_eq!(lfu_cache.get(2), 2);
+    assert_eq!(lfu_cache.get(1), 1);
+    assert_eq!(lfu_cache.get(4), 4);
+}
+
+#[test]
 fn n887_test() {
     assert_eq!(Solution::super_egg_drop(1, 2), 2);
     assert_eq!(Solution::super_egg_drop(2, 6), 3);
