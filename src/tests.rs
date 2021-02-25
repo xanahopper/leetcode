@@ -109,6 +109,17 @@ fn n460_test() {
 }
 
 #[test]
+fn n832_test() {
+    let items = vec![
+        vec![1,1,0], vec![1,0,1], vec![0,0,0]
+    ];
+    let result = vec![
+        vec![1,0,0], vec![0,1,0], vec![1,1,1]
+    ];
+    assert_eq!(Solution::flip_and_invert_image(items), result);
+}
+
+#[test]
 fn n887_test() {
     assert_eq!(Solution::super_egg_drop(1, 2), 2);
     assert_eq!(Solution::super_egg_drop(2, 6), 3);

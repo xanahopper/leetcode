@@ -31,11 +31,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba6559c-0a38-42e6-bff3-75f520cde2d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_460.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_1438.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_832.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_867.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/all.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/translation.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/mod.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +78,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/leetcode/editor/cn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/leetcode/editor/en" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,10 +89,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="leetcode.id" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/leetcode/editor/en" />
       <recent name="$PROJECT_DIR$/src/leetcode/editor/cn" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -101,11 +106,12 @@
       <command value="cargo update" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test tests::n460_test">
-    <configuration name="Test tests::n28_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --lib tests::n28_test -- --exact" />
+  <component name="RunManager" selected="Cargo.Test tests::n832_test">
+    <configuration name="Test tests::n14_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib tests::n14_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -116,10 +122,26 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::n460_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --lib tests::n460_test -- --exact" />
+    <configuration name="Test tests::n28_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib tests::n28_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test tests::n832_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib tests::n832_test -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -134,20 +156,7 @@
       <option name="command" value="test --package leetcode --lib tests::n887_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test tests::n8_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --lib tests::n8_test -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -162,6 +171,7 @@
       <option name="command" value="test --package leetcode --lib tests::n9_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
       <option name="backtrace" value="SHORT" />
@@ -179,11 +189,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test tests::n460_test" />
-        <item itemvalue="Cargo.Test tests::n9_test" />
-        <item itemvalue="Cargo.Test tests::n8_test" />
+        <item itemvalue="Cargo.Test tests::n832_test" />
         <item itemvalue="Cargo.Test tests::n887_test" />
-        <item itemvalue="Cargo.Test tests::n28_test" />
       </list>
     </recent_temporary>
   </component>
@@ -217,10 +224,9 @@
       <workItem from="1593094814635" duration="5192000" />
       <workItem from="1612625171136" duration="491000" />
       <workItem from="1612625688600" duration="1069000" />
-      <workItem from="1612626791149" duration="5028000" />
-      <workItem from="1612714251678" duration="939000" />
-      <workItem from="1612715646953" duration="1324000" />
-      <workItem from="1613150464594" duration="8417000" />
+      <workItem from="1612626791149" duration="3815000" />
+      <workItem from="1613786969771" duration="28000" />
+      <workItem from="1614159115181" duration="861000" />
     </task>
     <servers />
   </component>
@@ -246,9 +252,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/tests.rs</url>
-          <line>102</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/solution_887.rs</url>
+          <line>72</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

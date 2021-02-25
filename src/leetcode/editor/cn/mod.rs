@@ -11,4 +11,7 @@ pub mod solution_13;
 pub mod solution_14;
 pub mod solution_28;
 pub mod solution_460;
+pub mod solution_832;
 pub mod solution_887;
+pub mod solution_1438;
+pub mod solution_867;
