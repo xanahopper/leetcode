@@ -125,3 +125,18 @@ fn n887_test() {
     assert_eq!(Solution::super_egg_drop(2, 6), 3);
     assert_eq!(Solution::super_egg_drop(3, 14), 4);
 }
+
+#[test]
+fn n1178_test() {
+    let words = vec!["aaaa","asas","able","ability","actt","actor","access"]
+        .into_iter().map(|s| s.to_owned()).collect();
+    let puzzles = vec!["aboveyz","abrodyz","abslute","absoryz","actresz","gaswxyz"]
+        .into_iter().map(|s| s.to_owned()).collect();
+    assert_eq!(Solution::find_num_of_valid_words(words, puzzles), vec![1,1,3,2,4,0]);
+}
+
+#[test]
+fn n395_test() {
+    assert_eq!(Solution::longest_substring("aaabb".to_owned(), 3), 3);
+    assert_eq!(Solution::longest_substring("ababbc".to_owned(), 2), 5);
+}

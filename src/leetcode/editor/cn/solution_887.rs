@@ -57,7 +57,6 @@ use crate::leetcode::Solution;
 /// f(K, N) = f(K - 1, N - 1) + f(K, N - 1) + 1
 
 //leetcode submit region begin(Prohibit modification and deletion)
-use std::cmp::{min, max};
 impl Solution {
     pub fn super_egg_drop(k: i32, n: i32) -> i32 {
         let mut f = vec![vec![0; (n + 1) as usize]; (k + 1) as usize];
