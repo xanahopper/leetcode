@@ -16,3 +16,5 @@ pub mod solution_832;
 pub mod solution_887;
 pub mod solution_867;
 pub mod solution_1178;
+pub mod solution_896;
+pub mod solution_765;

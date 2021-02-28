@@ -140,3 +140,18 @@ fn n395_test() {
     assert_eq!(Solution::longest_substring("aaabb".to_owned(), 3), 3);
     assert_eq!(Solution::longest_substring("ababbc".to_owned(), 2), 5);
 }
+
+#[test]
+fn n896_test() {
+    assert_eq!(Solution::is_monotonic(vec![1,2,2,3]), true);
+    assert_eq!(Solution::is_monotonic(vec![6,5,4,4]), true);
+    assert_eq!(Solution::is_monotonic(vec![1,3,2]), false);
+    assert_eq!(Solution::is_monotonic(vec![1,2,4,5]), true);
+    assert_eq!(Solution::is_monotonic(vec![1,1,1]), true);
+}
+
+#[test]
+fn n765_test() {
+    assert_eq!(Solution::min_swaps_couples(vec![0, 2, 1, 3]), 1);
+    assert_eq!(Solution::min_swaps_couples(vec![3, 2, 0, 1]), 0);
+}
