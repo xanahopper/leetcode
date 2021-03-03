@@ -155,3 +155,13 @@ fn n765_test() {
     assert_eq!(Solution::min_swaps_couples(vec![0, 2, 1, 3]), 1);
     assert_eq!(Solution::min_swaps_couples(vec![3, 2, 0, 1]), 0);
 }
+
+#[test]
+fn n303_test() {
+    use crate::leetcode::solution_303::NumArray;
+
+    let num_array = NumArray::new(vec![-2, 0, 3, -5, 2, -1]);
+    assert_eq!(num_array.sum_range(0, 2), 1);
+    assert_eq!(num_array.sum_range(2, 5), -1);
+    assert_eq!(num_array.sum_range(0, 5), -3);
+}
