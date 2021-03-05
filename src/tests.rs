@@ -165,3 +165,9 @@ fn n303_test() {
     assert_eq!(num_array.sum_range(2, 5), -1);
     assert_eq!(num_array.sum_range(0, 5), -3);
 }
+
+#[test]
+fn n338_test() {
+    assert_eq!(Solution::count_bits(2), vec![0, 1, 1]);
+    assert_eq!(Solution::count_bits(5), vec![0, 1, 1, 2, 1, 2]);
+}

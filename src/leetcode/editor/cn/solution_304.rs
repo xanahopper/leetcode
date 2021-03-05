@@ -75,10 +75,4 @@ impl NumMatrix {
         self.sum_matrix[row2 as usize][col2 as usize] + self.sum_matrix[row1 as usize - 1][col1 as usize - 1] - self.sum_matrix[row2 as usize][col1 as usize - 1] - self.sum_matrix[row1 as usize -1][col2 as usize]
     }
 }
-
-/**
- * Your NumMatrix object will be instantiated and called as such:
- * let obj = NumMatrix::new(matrix);
- * let ret_1: i32 = obj.sum_region(row1, col1, row2, col2);
- */
 //leetcode submit region end(Prohibit modification and deletion)
