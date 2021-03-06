@@ -157,6 +157,17 @@ fn n765_test() {
 }
 
 #[test]
+fn n232_test() {
+    use crate::leetcode::solution_232::MyQueue;
+    let mut my_queue = MyQueue::new();
+    my_queue.push(1);
+    my_queue.push(2);
+    assert_eq!(my_queue.peek(), 1);
+    assert_eq!(my_queue.pop(), 1);
+    assert_eq!(my_queue.empty(), false);
+}
+
+#[test]
 fn n303_test() {
     use crate::leetcode::solution_303::NumArray;
 
