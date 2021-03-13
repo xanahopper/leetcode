@@ -41,7 +41,7 @@ use crate::leetcode::Solution;
 //leetcode submit region begin(Prohibit modification and deletion)
 
 impl Solution {
-    pub fn calculate(s: String) -> i32 {
+    pub fn calculate_224(s: String) -> i32 {
         #[derive(Copy, Clone)]
         enum Token {
             Number(i32),
@@ -51,22 +51,22 @@ impl Solution {
             End,
             Ignore
         }
-        let mut stack = s.chars()
+        let mut stack = s.as_bytes().iter()
             .fold(Vec::<Token>::new(), |mut acc, x| {
-                let token = match x {
-                    '0'..='9' => Token::Number(x - b'0'),
-                    '+' => Token::Add,
-                    '-' => Token::Minus,
-                    '(' => Token::Quote,
-                    ')' => Token::End,
-                    _ => Token::Ignore
-                };
-                if token != Token::Ignore {
-                    acc.push(token)
-                } else if token == Token::End {
-                    let mut expr = vec![];
-
-                }
+                // let token = match x {
+                //     '0'..='9' => Token::Number(x - b'0'),
+                //     '+' => Token::Add,
+                //     '-' => Token::Minus,
+                //     '(' => Token::Quote,
+                //     ')' => Token::End,
+                //     _ => Token::Ignore
+                // };
+                // if token != Token::Ignore {
+                //     acc.push(token)
+                // } else if token == Token::End {
+                //     let mut expr = vec![];
+                //
+                // }
                 acc
             });
         if let Token::Number(x) = stack[0] {

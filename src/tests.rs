@@ -182,3 +182,8 @@ fn n338_test() {
     assert_eq!(Solution::count_bits(2), vec![0, 1, 1]);
     assert_eq!(Solution::count_bits(5), vec![0, 1, 1, 2, 1, 2]);
 }
+
+#[test]
+fn n331_test() {
+    assert_eq!(Solution::is_valid_serialization("9,3,4,#,#,1,#,#,2,#,6,#,#".to_owned()), true);
+}
