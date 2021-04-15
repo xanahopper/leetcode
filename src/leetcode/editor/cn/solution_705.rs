@@ -66,7 +66,7 @@ impl MyHashSet {
     }
     
     fn add(&mut self, key: i32) {
-        self.data[MyHashSet::hash(key)] |= (1 << (key % 20));
+        self.data[MyHashSet::hash(key)] |= 1 << (key % 20);
     }
     
     fn remove(&mut self, key: i32) {
@@ -82,12 +82,4 @@ impl MyHashSet {
         key as usize / 20
     }
 }
-
-/**
- * Your MyHashSet object will be instantiated and called as such:
- * let obj = MyHashSet::new();
- * obj.add(key);
- * obj.remove(key);
- * let ret_3: bool = obj.contains(key);
- */
 //leetcode submit region end(Prohibit modification and deletion)
