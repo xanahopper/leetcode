@@ -182,3 +182,8 @@ fn n338_test() {
     assert_eq!(Solution::count_bits(2), vec![0, 1, 1]);
     assert_eq!(Solution::count_bits(5), vec![0, 1, 1, 2, 1, 2]);
 }
+
+#[test]
+fn n54_test() {
+    assert_eq!(Solution::spiral_order(vec![vec![1,2,3,4], vec![5,6,7,8], vec![9, 10, 11, 12]]), vec![1,2,3,4,8,12,11,10,9,5,6,7]);
+}

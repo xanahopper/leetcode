@@ -19,6 +19,14 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/solution_115.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/solution_115.rs" />
+              <option name="questionId" value="115" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/solution_1178.rs">
           <value>
             <LeetcodeEditor>
@@ -48,6 +56,22 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/solution_1438.rs" />
               <option name="questionId" value="1549" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/solution_1603.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/solution_1603.rs" />
+              <option name="questionId" value="1708" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/solution_227.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/solution_227.rs" />
+              <option name="questionId" value="227" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -112,6 +136,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/solution_503.rs" />
               <option name="questionId" value="503" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/solution_54.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/solution_54.rs" />
+              <option name="questionId" value="54" />
             </LeetcodeEditor>
           </value>
         </entry>
@@ -184,6 +216,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/solution_9.rs" />
               <option name="questionId" value="9" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/solution_92.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/solution_92.rs" />
+              <option name="questionId" value="92" />
             </LeetcodeEditor>
           </value>
         </entry>

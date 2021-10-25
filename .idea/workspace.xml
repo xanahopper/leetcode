@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -23,7 +26,7 @@
   </component>
   <component name="CMakeSettings">
     <configurations>
-      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" ENABLED="true" />
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="CargoProjects">
@@ -31,9 +34,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba6559c-0a38-42e6-bff3-75f520cde2d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_232.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_354.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_503.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_1603.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_54.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_92.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/all.json" afterDir="false" />
@@ -60,6 +63,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SAVE_CHANGES_POLICY" value="STASH" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="tsh58j50" />
   </component>
@@ -75,9 +86,11 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
+    <property name="cidr.known.project.marker" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/leetcode/editor/en" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -106,7 +119,12 @@
       <command value="cargo update" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test tests::n232_test">
+  <component name="RunManager" selected="Cargo.Test tests::n54_test">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test tests::n232_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="test --package leetcode --lib tests::n232_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -114,6 +132,7 @@
       <option name="requiredFeatures" value="true" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
       <option name="backtrace" value="SHORT" />
       <envs />
       <option name="isRedirectInput" value="false" />
@@ -122,13 +141,14 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test tests::n395_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --lib tests::n395_test -- --exact" />
+    <configuration name="Test tests::n54_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib tests::n54_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
       <option name="backtrace" value="SHORT" />
       <envs />
       <option name="isRedirectInput" value="false" />
@@ -144,6 +164,7 @@
       <option name="requiredFeatures" value="true" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
       <option name="backtrace" value="SHORT" />
       <envs />
       <option name="isRedirectInput" value="false" />
@@ -159,6 +180,7 @@
       <option name="requiredFeatures" value="true" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
       <option name="backtrace" value="SHORT" />
       <envs />
       <option name="isRedirectInput" value="false" />
@@ -174,6 +196,7 @@
       <option name="requiredFeatures" value="true" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
       <option name="backtrace" value="SHORT" />
       <envs />
       <option name="isRedirectInput" value="false" />
@@ -182,20 +205,6 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Cargo.Test tests::n232_test" />
-        <item itemvalue="Cargo.Test tests::n765_test" />
-        <item itemvalue="Cargo.Test tests::n896_test" />
-        <item itemvalue="Cargo.Test tests::n832_test" />
-        <item itemvalue="Cargo.Test tests::n395_test" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
@@ -234,6 +243,15 @@
       <workItem from="1614497250539" duration="16441000" />
       <workItem from="1614497250539" duration="7985000" />
       <workItem from="1614765164387" duration="2687000" />
+      <workItem from="1615805040922" duration="2183000" />
+      <workItem from="1615948106354" duration="6308000" />
+      <workItem from="1616295380671" duration="752000" />
+      <workItem from="1617158749771" duration="21000" />
+      <workItem from="1617158784041" duration="73000" />
+      <workItem from="1634538708900" duration="2265000" />
+      <workItem from="1634541825186" duration="1644000" />
+      <workItem from="1634543584000" duration="4929000" />
+      <workItem from="1635158407762" duration="597000" />
     </task>
     <servers />
   </component>
