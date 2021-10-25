@@ -32,7 +32,7 @@
 //
 // 进阶： 你可以使用一趟扫描完成反转吗？ 
 // Related Topics 链表 
-// 👍 749 👎 0
+// 👍 812 👎 0
 
 
 use crate::leetcode::Solution;
@@ -57,7 +57,43 @@ use leetcode_prelude::ListNode;
 // }
 impl Solution {
     pub fn reverse_between(head: Option<Box<ListNode>>, left: i32, right: i32) -> Option<Box<ListNode>> {
+        let mut root = ListNode { val: 0, next: head };
+        {
+            let mut current = &mut root;
+            let mut i = 1;
+            while current.next.is_some() {
+                if i >= left {
+                    let mut nodes = vec![];
+                    let mut mid = ListNode { val: 0, next: current.next.take() };
+                    let mut mid_current = &mut mid;
+                    while i <= right {
+                        if let Some(node) = mid_current.next.take() {
+                            nodes.push(node);
+                            mid_current = nodes.last_mut().unwrap();
+                        } else {
+                            break;
+                        }
+                        i += 1;
+                    }
 
+                    let rear = mid_current.next.take();
+                    mid = ListNode::new(0);
+                    mid_current = &mut mid;
+                    for node in nodes.into_iter().rev() {
+                        mid_current.next = Some(node);
+                        mid_current = mid_current.next.as_mut().unwrap();
+                    }
+
+                    mid_current.next = rear;
+                    current.next = mid.next;
+                    break;
+                } else {
+                    i += 1;
+                    current = current.next.as_mut().unwrap();
+                }
+            }
+        }
+        root.next
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)

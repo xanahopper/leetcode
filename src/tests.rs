@@ -184,6 +184,30 @@ fn n338_test() {
 }
 
 #[test]
+fn n331_test() {
+    assert_eq!(Solution::is_valid_serialization("9,3,4,#,#,1,#,#,2,#,6,#,#".to_owned()), true);
+}
+
+#[test]
+fn n706_test() {
+    use crate::leetcode::solution_706::MyHashMap;
+    let mut map = MyHashMap::new();
+    map.put(1, 1);
+    map.put(2, 2);
+    assert_eq!(map.get(1), 1);
+    assert_eq!(map.get(3), -1);
+    map.put(2, 1);
+    assert_eq!(map.get(2), 1);
+    map.remove(2);
+    assert_eq!(map.get(2), -1);
+}
+
+#[test]
+fn n115_test() {
+    assert_eq!(Solution::num_distinct("rabbbit".to_string(), "rabbit".to_string()), 3);
+}
+
+#[test]
 fn n54_test() {
     assert_eq!(Solution::spiral_order(vec![vec![1,2,3,4], vec![5,6,7,8], vec![9, 10, 11, 12]]), vec![1,2,3,4,8,12,11,10,9,5,6,7]);
 }
