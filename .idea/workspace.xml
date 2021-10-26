@@ -34,21 +34,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba6559c-0a38-42e6-bff3-75f520cde2d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_115.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_59.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_706.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_73.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_92.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_1603.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_54.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_92.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/all.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/all.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_705.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_705.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/translation.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/translation.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_1603.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_1603.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,6 +137,7 @@
       <option name="requiredFeatures" value="true" />
       <option name="allFeatures" value="false" />
       <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
       <option name="backtrace" value="SHORT" />
       <envs />
       <option name="isRedirectInput" value="false" />
@@ -203,6 +192,11 @@
       <option name="redirectInputPath" value="" />
       <method v="2">
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
@@ -266,6 +260,7 @@
       <workItem from="1634541825186" duration="1644000" />
       <workItem from="1634543584000" duration="4929000" />
       <workItem from="1635158407762" duration="597000" />
+      <workItem from="1635219121238" duration="778000" />
     </task>
     <servers />
   </component>

@@ -25,7 +25,6 @@ pub mod solution_303;
 pub mod solution_304;
 pub mod solution_338;
 pub mod solution_54;
-pub mod solution_92;
 pub mod solution_1603;
 pub mod solution_132;
 pub mod solution_224;
