@@ -34,9 +34,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba6559c-0a38-42e6-bff3-75f520cde2d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/doc/all.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/solution_838.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/doc/translation.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_838.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_1603.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_1603.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +101,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -113,21 +118,10 @@
       <command value="cargo update" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test tests::n115_test">
-    <configuration name="Test tests::n115_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --lib tests::n115_test -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
+  <component name="RunManager" selected="Cargo.Test tests::n838_test">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="Test tests::n232_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
@@ -194,18 +188,29 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+    <configuration name="Test tests::n838_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib tests::n838_test -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Test tests::n115_test" />
+        <item itemvalue="Cargo.Test tests::n838_test" />
+        <item itemvalue="Cargo.Test tests::n765_test" />
         <item itemvalue="Cargo.Test tests::n706_test" />
         <item itemvalue="Cargo.Test tests::n331_test" />
         <item itemvalue="Cargo.Test tests::n232_test" />
-        <item itemvalue="Cargo.Test tests::n765_test" />
       </list>
     </recent_temporary>
   </component>
@@ -261,6 +266,9 @@
       <workItem from="1634543584000" duration="4929000" />
       <workItem from="1635158407762" duration="597000" />
       <workItem from="1635219121238" duration="778000" />
+      <workItem from="1645450419053" duration="45000" />
+      <workItem from="1645450480358" duration="4013000" />
+      <workItem from="1645455753594" duration="1496000" />
     </task>
     <servers />
   </component>
@@ -281,6 +289,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="CargoCommandRunConfiguration">
+        <watch expression="res.chars" />
+        <watch expression="res.last_char" />
+        <watch expression="res.last_index" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

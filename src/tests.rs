@@ -208,6 +208,13 @@ fn n115_test() {
 }
 
 #[test]
+fn n838_test() {
+    assert_eq!(Solution::push_dominoes("RR.L".to_string()), "RR.L".to_string());
+    assert_eq!(Solution::push_dominoes(".L.R...LR..L..".to_string()), "LL.RR.LLRRLL..".to_string());
+    assert_eq!(Solution::push_dominoes(".L.R....LR..L..".to_string()), "LL.RRRLLLRRLL..".to_string());
+}
+
+#[test]
 fn n54_test() {
     assert_eq!(Solution::spiral_order(vec![vec![1,2,3,4], vec![5,6,7,8], vec![9, 10, 11, 12]]), vec![1,2,3,4,8,12,11,10,9,5,6,7]);
 }
