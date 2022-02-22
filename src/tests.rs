@@ -218,3 +218,9 @@ fn n838_test() {
 fn n54_test() {
     assert_eq!(Solution::spiral_order(vec![vec![1,2,3,4], vec![5,6,7,8], vec![9, 10, 11, 12]]), vec![1,2,3,4,8,12,11,10,9,5,6,7]);
 }
+
+#[test]
+fn n1994_test() {
+    assert_eq!(Solution::number_of_good_subsets(vec![1,2,3,4]), 6);
+    assert_eq!(Solution::number_of_good_subsets(vec![4,2,3,15]), 5);
+}

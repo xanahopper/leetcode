@@ -66,6 +66,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/solution_1994.rs">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/solution_1994.md" />
+              <option name="frontendQuestionId" value="leetcode-cn.com1994" />
+              <option name="host" value="leetcode-cn.com" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/solution_1994.rs" />
+              <option name="titleSlug" value="the-number-of-good-subsets" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/solution_224.rs">
           <value>
             <LeetcodeEditor>
