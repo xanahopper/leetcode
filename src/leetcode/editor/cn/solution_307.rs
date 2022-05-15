@@ -100,11 +100,4 @@ impl NumArray {
         return ans;
     }
 }
-
-/**
- * Your NumArray object will be instantiated and called as such:
- * let obj = NumArray::new(nums);
- * obj.update(index, val);
- * let ret_2: i32 = obj.sum_range(left, right);
- */
 //leetcode submit region end(Prohibit modification and deletion)
