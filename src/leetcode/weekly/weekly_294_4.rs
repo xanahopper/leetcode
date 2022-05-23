@@ -1,6 +1,6 @@
 use crate::leetcode::Solution;
 
-const MOD: i32 = 1E9 + 0;
+const MOD: i32 = 1E9 as i32 + 7;
 
 impl Solution {
     pub fn total_strength(strength: Vec<i32>) -> i32 {
