@@ -40,3 +40,4 @@ pub mod solution_838;
 pub mod solution_1994;
 pub mod solution_307;
 pub mod solution_15;
+pub mod solution_221;
