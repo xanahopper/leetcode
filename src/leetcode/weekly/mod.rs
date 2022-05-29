@@ -5,3 +5,7 @@ pub mod weekly_294_1;
 pub mod weekly_294_2;
 pub mod weekly_294_3;
 pub mod weekly_294_4;
+mod weekly_295_1;
+mod weekly_295_2;
+mod weekly_295_3;
+mod weekly_295_4;

@@ -34,8 +34,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba6559c-0a38-42e6-bff3-75f520cde2d8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/leetcode/weekly/weekly_295_1.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/weekly/weekly_295_2.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/weekly/weekly_295_3.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/weekly/weekly_295_4.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/biweekly/biweekly_79_4.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/biweekly/biweekly_79_4.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/weekly/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/weekly/mod.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,14 +88,15 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/xana/Dev/Rust/Projects/Leetcode/src/leetcode/weekly",
     "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/leetcode/half_month" />
       <recent name="$PROJECT_DIR$/src/leetcode/weekly" />
+      <recent name="$PROJECT_DIR$/src/leetcode/half_month" />
       <recent name="$PROJECT_DIR$/src/leetcode/editor/en" />
       <recent name="$PROJECT_DIR$/src/leetcode/editor/cn" />
     </key>
@@ -105,24 +110,7 @@
       <command value="cargo update" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test leetcode::biweekly::biweekly_79_3::biweekly_79_3_test">
-    <configuration name="Test leetcode::biweekly::biweekly_79_1::biweekly_79_1_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --lib leetcode::biweekly::biweekly_79_1::biweekly_79_1_test -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Cargo.Test leetcode::weekly::weekly_295_3::weekly_295_3_test">
     <configuration name="Test leetcode::biweekly::biweekly_79_2::biweekly_79_2_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="test --package leetcode --lib leetcode::biweekly::biweekly_79_2::biweekly_79_2_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -157,8 +145,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test leetcode::weekly::weekly_293_1::weekly_293_1_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --lib leetcode::weekly::weekly_293_1::weekly_293_1_test -- --exact" />
+    <configuration name="Test leetcode::weekly::weekly_295_1::weekly_295_1_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib leetcode::weekly::weekly_295_1::weekly_295_1_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -174,8 +162,25 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test leetcode::weekly::weekly_294_3::weekly_294_3_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --lib leetcode::weekly::weekly_294_3::weekly_294_3_test -- --exact" />
+    <configuration name="Test leetcode::weekly::weekly_295_2::weekly_295_2_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib leetcode::weekly::weekly_295_2::weekly_295_2_test -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test leetcode::weekly::weekly_295_3::weekly_295_3_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib leetcode::weekly::weekly_295_3::weekly_295_3_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -193,10 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test leetcode::weekly::weekly_295_3::weekly_295_3_test" />
+        <item itemvalue="Cargo.Test leetcode::weekly::weekly_295_2::weekly_295_2_test" />
+        <item itemvalue="Cargo.Test leetcode::weekly::weekly_295_1::weekly_295_1_test" />
         <item itemvalue="Cargo.Test leetcode::biweekly::biweekly_79_3::biweekly_79_3_test" />
         <item itemvalue="Cargo.Test leetcode::biweekly::biweekly_79_2::biweekly_79_2_test" />
-        <item itemvalue="Cargo.Test leetcode::biweekly::biweekly_79_1::biweekly_79_1_test" />
-        <item itemvalue="Cargo.Test leetcode::weekly::weekly_293_1::weekly_293_1_test" />
       </list>
     </recent_temporary>
   </component>
@@ -267,7 +273,7 @@
       <workItem from="1653308538884" duration="458000" />
       <workItem from="1653309244228" duration="3684000" />
       <workItem from="1653747455955" duration="296000" />
-      <workItem from="1653748015316" duration="7180000" />
+      <workItem from="1653748015316" duration="17455000" />
     </task>
     <servers />
   </component>
