@@ -1,9 +1,90 @@
+use std::cmp::min;
 use std::ops::Range;
+use crate::algorithm::segment_tree::{Operation, RangeOps, SegmentTree};
 
 struct BookMyShow {
-    rows: Vec<Vec<Range<i32>>>
+    book_tree: SegmentTree<BookInfo>,
+    n: i32,
+    m: i32
 }
 
+#[derive(Debug, Copy, Clone)]
+struct BookInfo {
+    min: i32,
+    sum: i32
+}
+
+impl Operation<BookInfo> for BookInfo {
+    fn merge(&self, b: &Self) -> Self {
+        BookInfo { min: min(self.min, b.min), sum: self.sum + b.sum }
+    }
+}
+
+impl Default for BookInfo {
+    fn default() -> Self {
+        BookInfo { min: 0, sum: 0 }
+    }
+}
+
+trait BookOperation {
+    fn index(&self, root: usize, range: Range<usize>, right: usize, val: i32) -> i32;
+
+    fn query_sum(&self, query_range: Range<usize>) -> i32;
+
+    fn add(&mut self, root: usize, range: Range<usize>, index: usize, val: i32);
+}
+
+impl BookOperation for SegmentTree<BookInfo> {
+    fn index(&self, root: usize, range: Range<usize>, right: usize, val: i32) -> i32 {
+        if let Some(r) = &self.tree[root] {
+            if r.min > val {
+                return 0;
+            }
+        }
+        if range.len() == 0 {
+            return 0;
+        }
+        let mid = range.mid();
+        let left_index = SegmentTree::<BookInfo>::left_child(root);
+        let right_index = SegmentTree::<BookInfo>::right_child(root);
+        if let Some(r) = &self.tree[left_index] {
+            if r.min <= val {
+                return self.index(left_index, range.start..mid, right, val);
+            }
+        }
+        if mid < right {
+            return self.index(right_index, mid + 1..range.end, right_index, val)
+        }
+        -1
+    }
+
+    fn query_sum(&self, query_range: Range<usize>) -> i32 {
+        self.query(query_range).unwrap_or(BookInfo::default()).sum
+    }
+
+    fn add(&mut self, root: usize, range: Range<usize>, index: usize, val: i32) {
+        if range.len() == 0 {
+            if let Some(mut r) = self.tree[root] {
+                r.min += val;
+                r.sum += val;
+                return;
+            }
+        }
+        let mid = range.mid();
+        let left_index = SegmentTree::<BookInfo>::left_child(root);
+        let right_index = SegmentTree::<BookInfo>::right_child(root);
+        if index <= mid {
+            self.add(left_index, range.start..mid, index, val);
+        } else {
+            self.add(right_index, mid + 1..range.end, index, val);
+        }
+        if let Some(left_res) = &self.tree[left_index] {
+            if let Some(right_res) = &self.tree[right_index] {
+                self.tree[root] = Some(left_res.merge(right_res));
+            }
+        }
+    }
+}
 
 /**
  * `&self` means the method takes an immutable reference.
@@ -13,48 +94,25 @@ impl BookMyShow {
 
     fn new(n: i32, m: i32) -> Self {
         BookMyShow {
-            rows: vec![vec![0..m]; n as usize]
+            book_tree: SegmentTree::<BookInfo>::new((0..n).map(|_| BookInfo::default()).collect()),
+            n,
+            m
         }
     }
 
     fn gather(&mut self, k: i32, max_row: i32) -> Vec<i32> {
-        // for (index, mut row) in self.rows[0..=max_row as usize].iter().enumerate() {
-        //     if let Some(position) = row.iter().enumerate().filter(|r| r.len() >= k as usize).min_by_key(|r| r.1.len()) {
-        //         let r = row.remove(position.0);
-        //         if r.len() > k as usize {
-        //             row.push(r.start + k .. r.end)
-        //         }
-        //         return vec![index as i32, r.start]
-        //     }
-        // }
-        vec![]
+        let i = self.book_tree.index(0, 0..self.book_tree.len - 1, (max_row + 1) as usize, self.m - k);
+        if i < 0 {
+            vec![]
+        } else {
+            let seats = self.book_tree.query_sum(i as usize..i as usize);
+            self.book_tree.add(0, 0..self.book_tree.len - 1, i as usize, k);
+            return vec![i, seats]
+        }
     }
 
     fn scatter(&mut self, k: i32, max_row: i32) -> bool {
-        // if self.rows[0..=max_row as usize].iter().fold(0, |res, r| {
-        //     res + r.iter().map(|x| x.len()).sum()
-        // }) >= k {
-        //     // self.rows[0..=max_row as usize].iter().enumerate().fold((true, k), |(res, remain), (index, range)| {
-        //     //     if let Some((position, r)) = range.iter().enumerate().min_by_key(|r| r.1.len()) {
-        //     //         if r.len() > remain as usize {
-        //     //
-        //     //         }
-        //     //     }
-        //     // });
-        //     true
-        // } else { false }
 
-        // for (index, mut row) in self.rows[0..=max_row as usize].iter().enumerate() {
-        //     if let Some(position) = row.iter().enumerate().min_by_key(|r| r.1.len()) {
-        //         let r = row.remove(position.0);
-        //         if r.len() > remain as usize {
-        //             row.push(r.start + remain .. r.end)
-        //         } else {
-        //
-        //         }
-        //         return vec![index as i32, r.start]
-        //     }
-        // }
         false
     }
 }

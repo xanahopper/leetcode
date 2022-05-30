@@ -6,12 +6,12 @@ pub trait Operation<T : Copy> {
 
 #[derive(Debug)]
 pub struct SegmentTree<T> {
-    data: Vec<T>,
-    tree: Vec<Option<T>>,
-    len: usize
+    pub data: Vec<T>,
+    pub tree: Vec<Option<T>>,
+    pub len: usize
 }
 
-trait RangeOps<T> {
+pub trait RangeOps<T> {
     fn mid(&self) -> T;
 }
 
@@ -41,11 +41,11 @@ impl<T> SegmentTree<T> where T : Copy + Operation<T> + Default {
         self.tree[root] = self.tree[left_index].or(Some(T::default())).merge(&self.tree[right_index].or(Some(T::default())));
     }
 
-    fn left_child(root: usize) -> usize {
+    pub fn left_child(root: usize) -> usize {
         root * 2 + 1
     }
 
-    fn right_child(root: usize) -> usize {
+    pub fn right_child(root: usize) -> usize {
         SegmentTree::<T>::left_child(root) + 1
     }
 
