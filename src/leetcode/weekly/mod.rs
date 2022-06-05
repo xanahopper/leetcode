@@ -9,3 +9,7 @@ mod weekly_295_1;
 mod weekly_295_2;
 mod weekly_295_3;
 mod weekly_295_4;
+mod weekly_296_1;
+mod weekly_296_2;
+mod weekly_296_3;
+mod weekly_296_4;
