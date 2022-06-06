@@ -1,7 +1,7 @@
 use std::ops::Range;
 
 pub trait Operation<T : Copy> {
-    fn merge(&self, b: &Self) -> Self;
+    fn merge(&self, a: &Self, b: &Self) -> Self;
 }
 
 #[derive(Debug)]
@@ -21,9 +21,9 @@ impl RangeOps<usize> for Range<usize> {
     }
 }
 
-impl<T : Copy> Operation<T> for Option<T> where T : Operation<T> {
-    fn merge(&self, b: &Self) -> Self {
-        self.and_then(|a| b.and_then(|b| Some(a.merge(&b))))
+impl<T : Copy> Operation<T> for Option<T> where T : Operation<T> + Default {
+    fn merge(&self, a: &Self, b: &Self) -> Self {
+        a.and_then(|a| b.and_then(|b| Some(self.unwrap_or_default().merge(&a, &b))))
     }
 }
 
@@ -38,7 +38,7 @@ impl<T> SegmentTree<T> where T : Copy + Operation<T> + Default {
         let mid = range.mid();
         self.build(left_index, range.start..mid);
         self.build(right_index, mid + 1..range.end);
-        self.tree[root] = self.tree[left_index].or(Some(T::default())).merge(&self.tree[right_index].or(Some(T::default())));
+        self.tree[root] = self.tree[root].merge(&self.tree[left_index].or(Some(T::default())), &self.tree[right_index].or(Some(T::default())));
     }
 
     pub fn left_child(root: usize) -> usize {
@@ -88,7 +88,7 @@ impl<T> SegmentTree<T> where T : Copy + Operation<T> + Default {
         let left_res = self.recursion_query(left_index, range.start..mid, query_range.start..mid);
         let right_res = self.recursion_query(right_index, mid + 1..range.end, mid + 1..query_range.end);
 
-        left_res.merge(&right_res)
+        self.tree[root].merge(&left_res, &right_res)
     }
 
     pub fn set(&mut self, index: usize, e: T) {
@@ -112,7 +112,7 @@ impl<T> SegmentTree<T> where T : Copy + Operation<T> + Default {
         } else {
             self.recursion_set(left_index, range.start..mid, index, e)
         }
-        self.tree[root_index] = self.tree[left_index].merge(&self.tree[right_index]);
+        self.tree[root_index] = self.tree[root_index].merge(&self.tree[left_index], &self.tree[right_index]);
     }
 }
 
@@ -122,8 +122,8 @@ struct Ticket {
 }
 
 impl Operation<Ticket> for Ticket {
-    fn merge(&self, b: &Self) -> Self {
-        Ticket { cost: self.cost + b.cost }
+    fn merge(&self, a: &Self, b: &Self) -> Self {
+        Ticket { cost: a.cost + b.cost }
     }
 }
 

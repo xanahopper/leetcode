@@ -15,7 +15,7 @@ struct BookInfo {
 }
 
 impl Operation<BookInfo> for BookInfo {
-    fn merge(&self, b: &Self) -> Self {
+    fn merge(&self, a: &Self, b: &Self) -> Self {
         BookInfo { min: min(self.min, b.min), sum: self.sum + b.sum }
     }
 }
@@ -78,11 +78,7 @@ impl BookOperation for SegmentTree<BookInfo> {
         } else {
             self.add(right_index, mid + 1..range.end, index, val);
         }
-        if let Some(left_res) = &self.tree[left_index] {
-            if let Some(right_res) = &self.tree[right_index] {
-                self.tree[root] = Some(left_res.merge(right_res));
-            }
-        }
+        self.tree[root] = self.tree[left_index].merge(&self.tree[left_index], &self.tree[right_index]);
     }
 }
 
