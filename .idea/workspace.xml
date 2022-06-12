@@ -34,13 +34,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba6559c-0a38-42e6-bff3-75f520cde2d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/solution_732.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_732.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/biweekly/biweekly_80_1.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/biweekly/biweekly_80_2.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/biweekly/biweekly_80_3.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/biweekly/biweekly_80_4.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/segment_tree.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/segment_tree.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/biweekly/biweekly_79_4.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/biweekly/biweekly_79_4.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/biweekly/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/biweekly/mod.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +110,7 @@
       <command value="cargo update" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test leetcode::editor::cn::solution_732::solution_732_test">
+  <component name="RunManager" selected="Cargo.Test leetcode::biweekly::biweekly_80_2::biweekly_80_2_test">
     <configuration name="Test algorithm::segment_tree::it_works" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="test --package leetcode --lib algorithm::segment_tree::it_works -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -129,42 +128,42 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test leetcode::biweekly::biweekly_80_1::biweekly_80_1_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib leetcode::biweekly::biweekly_80_1::biweekly_80_1_test -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test leetcode::biweekly::biweekly_80_2::biweekly_80_2_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib leetcode::biweekly::biweekly_80_2::biweekly_80_2_test -- --exact" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="emulateTerminal" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <envs />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Test leetcode::editor::cn::solution_732::solution_732_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="test --package leetcode --lib leetcode::editor::cn::solution_732::solution_732_test -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test leetcode::weekly::weekly_296_2::weekly_296_2_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --lib leetcode::weekly::weekly_296_2::weekly_296_2_test -- --exact" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="emulateTerminal" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <envs />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Test leetcode::weekly::weekly_296_3::weekly_296_3_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --lib leetcode::weekly::weekly_296_3::weekly_296_3_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -199,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test leetcode::biweekly::biweekly_80_2::biweekly_80_2_test" />
+        <item itemvalue="Cargo.Test leetcode::biweekly::biweekly_80_1::biweekly_80_1_test" />
         <item itemvalue="Cargo.Test leetcode::editor::cn::solution_732::solution_732_test" />
         <item itemvalue="Cargo.Test algorithm::segment_tree::it_works" />
         <item itemvalue="Cargo.Test leetcode::weekly::weekly_296_4::weekly_296_4_test" />
-        <item itemvalue="Cargo.Test leetcode::weekly::weekly_296_3::weekly_296_3_test" />
-        <item itemvalue="Cargo.Test leetcode::weekly::weekly_296_2::weekly_296_2_test" />
       </list>
     </recent_temporary>
   </component>
@@ -275,7 +274,8 @@
       <workItem from="1653309244228" duration="3684000" />
       <workItem from="1653747455955" duration="296000" />
       <workItem from="1653748015316" duration="40146000" />
-      <workItem from="1654396082893" duration="12312000" />
+      <workItem from="1654396082893" duration="13752000" />
+      <workItem from="1654957744724" duration="5223000" />
     </task>
     <servers />
   </component>
@@ -340,24 +340,19 @@
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/solution_732.rs</url>
-          <line>95</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/solution_732.rs</url>
-          <line>103</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/leetcode/editor/cn/solution_732.rs</url>
-          <line>113</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$USER_HOME$/.rustup/toolchains/stable-aarch64-apple-darwin/lib/rustlib/src/rust/library/core/src/option.rs</url>
-          <line>767</line>
+          <line>781</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/leetcode/biweekly/biweekly_80_2.rs</url>
+          <line>39</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/src/leetcode/biweekly/biweekly_80_2.rs</url>
+          <line>37</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -370,7 +365,7 @@
     </breakpoint-manager>
     <watches-manager>
       <configuration name="CargoCommandRunConfiguration">
-        <watch expression="self.data.get(&amp;1)" language="Rust" />
+        <watch expression="len - index as i32" language="Rust" />
       </configuration>
     </watches-manager>
   </component>
