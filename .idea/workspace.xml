@@ -34,15 +34,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dba6559c-0a38-42e6-bff3-75f520cde2d8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/algorithm/binary_search.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/weekly/weekly_297_1.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/weekly/weekly_297_2.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/weekly/weekly_297_3.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/leetcode/weekly/weekly_297_4.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/solution_1051.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/solution_498.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_1051.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/solution_498.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/leetcode/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/leetcode/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithm/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithm/mod.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/biweekly/biweekly_80_2.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/biweekly/biweekly_80_2.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/leetcode/weekly/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/weekly/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/leetcode/editor/cn/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/leetcode/editor/cn/mod.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +111,7 @@
       <command value="cargo update" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Test leetcode::weekly::weekly_297_3::weekly_297_3_test">
+  <component name="RunManager" selected="Cargo.Test leetcode::editor::cn::solution_498::solution_498_test">
     <configuration name="Test algorithm::binary_search::binary_search_lower_bound_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="test --package leetcode --lib algorithm::binary_search::binary_search_lower_bound_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
@@ -148,8 +146,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test leetcode::weekly::weekly_297_1::weekly_297_1_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --lib leetcode::weekly::weekly_297_1::weekly_297_1_test -- --exact" />
+    <configuration name="Test leetcode::editor::cn::solution_1051::solution_1051_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib leetcode::editor::cn::solution_1051::solution_1051_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -165,8 +163,8 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test leetcode::weekly::weekly_297_2::weekly_297_2_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="test --package leetcode --lib leetcode::weekly::weekly_297_2::weekly_297_2_test -- --exact" />
+    <configuration name="Test leetcode::editor::cn::solution_498::solution_498_test" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="test --package leetcode --lib leetcode::editor::cn::solution_498::solution_498_test -- --exact" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <option name="channel" value="DEFAULT" />
       <option name="requiredFeatures" value="true" />
@@ -201,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cargo.Test leetcode::editor::cn::solution_498::solution_498_test" />
+        <item itemvalue="Cargo.Test leetcode::editor::cn::solution_1051::solution_1051_test" />
         <item itemvalue="Cargo.Test leetcode::weekly::weekly_297_3::weekly_297_3_test" />
         <item itemvalue="Cargo.Test leetcode::biweekly::biweekly_80_2::biweekly_80_2_test" />
         <item itemvalue="Cargo.Test algorithm::binary_search::binary_search_lower_bound_test" />
-        <item itemvalue="Cargo.Test leetcode::weekly::weekly_297_2::weekly_297_2_test" />
-        <item itemvalue="Cargo.Test leetcode::weekly::weekly_297_1::weekly_297_1_test" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +276,7 @@
       <workItem from="1653747455955" duration="296000" />
       <workItem from="1653748015316" duration="40146000" />
       <workItem from="1654396082893" duration="13752000" />
-      <workItem from="1654957744724" duration="21954000" />
+      <workItem from="1654957744724" duration="27410000" />
     </task>
     <servers />
   </component>
