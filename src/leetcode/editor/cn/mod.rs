@@ -45,3 +45,5 @@ pub mod solution_732;
 pub mod solution_1051;
 pub mod solution_498;
 pub mod solution_719;
+pub mod solution_532;
+pub mod solution_1089;

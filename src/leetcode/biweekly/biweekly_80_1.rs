@@ -22,7 +22,7 @@ struct StrongPasswordFlag {
 impl Solution {
 
     pub fn strong_password_checker_ii(password: String) -> bool {
-        let SYMBOLS: Vec<u8> = Vec::from("!@#$%^&*()-+");
+        let symbols: Vec<u8> = Vec::from("!@#$%^&*()-+");
         if password.len() < 8 {
             return false;
         }
@@ -36,7 +36,7 @@ impl Solution {
             res.upper |= c >= UPPER && c < UPPER + 26;
             res.lower |= c >= LOWER && c < LOWER + 26;
             res.number |= c >= NUMBER && c < NUMBER + 10;
-            res.symbol |= SYMBOLS.contains(&c);
+            res.symbol |= symbols.contains(&c);
             if let Some(lc) = last_char {
                 res.same |= c == lc;
             }
