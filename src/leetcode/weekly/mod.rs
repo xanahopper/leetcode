@@ -21,3 +21,12 @@ mod weekly_298_1;
 mod weekly_298_2;
 mod weekly_298_3;
 mod weekly_298_4;
+mod weekly_299_1;
+mod weekly_299_2;
+mod weekly_299_3;
+mod weekly_299_4;
+
+mod weekly_300_4;
+mod weekly_300_1;
+mod weekly_300_2;
+mod weekly_300_3;
