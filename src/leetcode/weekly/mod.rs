@@ -38,3 +38,6 @@ mod weekly_302_1;
 mod weekly_302_2;
 mod weekly_302_3;
 mod weekly_302_4;
+mod weekly_303_4;
+mod weekly_303_3;
+mod weekly_303_2;

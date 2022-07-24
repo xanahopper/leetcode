@@ -60,8 +60,6 @@ fn solution_221_test() {
 }
 
 //leetcode submit region begin(Prohibit modification and deletion)
-use std::cmp::{max, min};
-
 impl Solution {
     pub fn maximal_square(matrix: Vec<Vec<char>>) -> i32 {
         // let n = matrix.len();
