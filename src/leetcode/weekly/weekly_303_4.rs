@@ -11,7 +11,7 @@ fn weekly_297_4_test() {
 
 impl Solution {
     pub fn count_excellent_pairs(nums: Vec<i32>, k: i32) -> i64 {
-        let nums: HashSet<i32> = HashSet::from_iter(nums);
+        let nums: HashSet<i32> = nums.into_iter().collect();
         let mut count = nums.iter().map(|&x| Solution::bit_count(x as u32))
             .fold(vec![0; 150], |mut r, c| {
                 r[c as usize] += 1;
